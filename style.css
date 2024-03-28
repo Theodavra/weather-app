@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Set the background color to be transparent */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+  margin-top: 105px;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #E3E3E3;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #C1C1C1;
+  font-size: 16px;
+}
+
+
+menu,
+ul {
+  display: flex;
+  /* flex-direction: row; */
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 0.9em;
+  justify-content: start;
+}
+
+li {
+list-style: none;
+
+}
+
+button {
+width: 100%;
+}
+
+.weather{
+display: flex;
+justify-content: space-between;
+padding: 1.8rem 0px;
+}
+
+.header-weather{
+display: flex;
+flex-direction: column;
+align-items: start;
+}
+
+.header-weather-temperature{
+font-size: 50px;
+font-weight: 600;
+}
+
+.header-weather-info{
+
+}
+
+.icon{
+width: 20%;
+}
+
+.divider {
+border: none;
+border-top: 2px solid #ccc;
+}
+
+.large-divider {
+border: none;
+border-top: 16px solid #ccc;
+}
+
+h3{
+text-align-last: start;
+}
+
+
+.info-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(33% - 15px);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 25px 15px;
+}
+
+.weather-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 25px auto;
+}
+
+.value {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+button.active {
+  border: 1px solid lightgreen;
+  color: lightgreen;
+}
