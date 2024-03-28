@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+              <menu>
+                  <li><button id="now">Now</button></li>
+                  <li><button id="today">Today</button></li>
+                  <li><button id="date">Select Date</button></li>
+              </menu>
+
+              <div class="weather">
+                <div class="header-weather">
+                  <div class="header-weather-temperature">
+                    <span class="tempretature"></span> <!-- Span to display temperature -->
+                  </div>
+                  <div class="header-weather-info">
+                    <span class="weather-description"></span>
+                  </div>
+                </div>
+                <div class="icon">
+                    <i class="weather-icon"></i>
+                </div>
+                    
+               </div>
+              </div>
+          </div>
+        <!-- Divider -->
+          <hr class="divider">
+          <div class="weather-info container">
+            <div class=" info-box feels-like ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Feels like</div>
+              </div>
+              
+            </div>
+            <div class=" info-box wind ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Wind</div>
+              </div>
+            </div>
+            <div class=" info-box wind-gust ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Wind Gust</div>
+              </div>
+            </div>
+            <div class=" info-box wind-deg ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Wind Deg</div>
+              </div>
+            </div>
+            <div class=" info-box humidity ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Humidity</div>
+              </div>
+            </div>
+            <div class=" info-box pressure ">
+              <div class="info">
+                <div class="value"></div>
+                <div class="description">Pressure</div>
+              </div>
+            </div>
+            
+
+          </div>
+      
+
+      
+      
+          <div class="large-divider"></div>
+
+          <div class="weekly-variation container">
+
+            <h3>Weekly Variation</h3>
+            <div class="table" ></div>
+            <div id="chartContainer" style="height: 300px; width: 100%;">
+            </div>
+          </div>
+    </hr>
+
+    
+
+    
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script type="text/javascript">
+        
+
+        fetch('./api/weatherAPI.json')
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+          })
+    </script>
+
+</body>
+</html>
+
